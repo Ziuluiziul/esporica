@@ -1,0 +1,20 @@
+{
+  "name": "esporica",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bullet heaven no tanque primordial \u2014 Three.js",
+  "scripts": {
+    "dev": "vite --host --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host --port 4173",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.7"
+  }
+}

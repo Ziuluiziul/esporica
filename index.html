@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>ESPÓRICA — tanque primordial</title>
+  </head>
+  <body>
+    <div id="hud">
+      <header class="top">
+        <div class="brand">
+          <span class="mark"></span>
+          <div>
+            <strong>ESPÓRICA</strong>
+            <small>tanque primordial · bullet heaven</small>
+          </div>
+        </div>
+        <div class="clock" id="clock">00:00</div>
+        <div class="kills" id="kills">0 mortes</div>
+      </header>
+      <div class="bars">
+        <div class="bar hp"><i id="hpFill"></i><span id="hpTxt">100</span></div>
+        <div class="bar xp"><i id="xpFill"></i><span id="xpTxt">nv 1</span></div>
+      </div>
+      <aside class="genes" id="geneList"></aside>
+      <div class="wave" id="wave">onda 1 · plâncton</div>
+    </div>
+    <div id="veil" class="overlay show">
+      <div class="card title">
+        <p class="kicker">vida artificial · sobrevivência</p>
+        <h1>ESPÓRICA</h1>
+        <p class="lede">És um organismo no tanque. Os outros evoluem contra ti. Disparas sozinho. Move-te. Escolhe genes. Não morras.</p>
+        <ul class="keys">
+          <li><kbd>WASD</kbd> mover</li>
+          <li><kbd>ESC</kbd> pausa</li>
+          <li>disparo automático</li>
+        </ul>
+        <button id="btnStart" type="button">entrar no tanque</button>
+      </div>
+    </div>
+    <div id="levelup" class="overlay">
+      <div class="card picks">
+        <p class="kicker">mutação disponível</p>
+        <h2>escolhe um gene</h2>
+        <div id="picks" class="pick-row"></div>
+      </div>
+    </div>
+    <div id="dead" class="overlay">
+      <div class="card">
+        <p class="kicker">lise</p>
+        <h2>o tanque absorveu-te</h2>
+        <p id="recap" class="lede"></p>
+        <button id="btnAgain" type="button">renascer</button>
+      </div>
+    </div>
+    <div id="pause" class="overlay">
+      <div class="card">
+        <h2>pausa</h2>
+        <p class="lede">O tanque congela. ESC continua.</p>
+        <button id="btnResume" type="button">continuar</button>
+      </div>
+    </div>
+    <canvas id="view"></canvas>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
